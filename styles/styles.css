@@ -88,6 +88,10 @@ footer {
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
+    .greeting {
+        filter: blur(0.01rem)
+    }
+
     .greeting h1 {
         font-size: 80px;
     }
@@ -98,6 +102,7 @@ and (max-device-width : 480px) {
     
     .description p {
         font-size: 26px;
+        filter: blur(0.01rem)
     }
     
     #mail {
