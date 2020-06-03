@@ -1,0 +1,193 @@
+body {
+    background-image: url('/images/ales-nesetril-Im7lZjxeLhg-unsplash-dark.jpg');
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.greeting {
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    filter: blur(0.02rem)
+}
+
+.greeting h1 {
+    font-size: 600%;
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.greeting h3 {
+    font-size: 300%;
+    font-weight: lighter;
+}
+
+.description p {
+    font-size: xx-large;
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    filter: blur(0.02rem)
+}
+
+#mail {
+    font-size: medium;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    opacity: 0.9;
+    filter: blur(0.02rem)
+}
+
+.copyright {
+    font-size: medium;
+    padding-top: 5px;
+}
+
+.credit {
+    font-size: small;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.credit a {
+    color: whitesmoke;
+}
+
+/* button {
+    align-items: center;
+    font-size: 300%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    color: darkgrey;
+    opacity: 0.3;
+    text-align: center;
+    background-color: black;
+    border-radius: 15px;
+} */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+    .greeting {
+        filter: none
+    }
+
+    .greeting h1 {
+        font-size: 80px;
+    }
+    
+    .greeting h3 {
+        font-size: 30px;
+    }
+    
+    .description p {
+        font-size: 26px;
+        filter: none
+    }
+    
+    #mail {
+        font-size: 16px;
+    }
+    
+    footer {
+        filter: none;
+    }
+
+    .copyright {
+        font-size: 16px;
+    }
+    
+    .credit {
+        font-size: 14px;
+    }
+}
+ 
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+/* STYLES GO HERE */
+}
+ 
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* STYLES GO HERE */
+}
+ 
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* STYLES GO HERE */
+}
+ 
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* STYLES GO HERE */
+}
+ 
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* STYLES GO HERE */
+}
+ 
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* STYLES GO HERE */
+}
+ 
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* STYLES GO HERE */
+}
+ 
+/* iPhone 5 (portrait &amp; landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+/* STYLES GO HERE */
+}
+ 
+/* iPhone 5 (landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+/* STYLES GO HERE */
+}
+ 
+/* iPhone 5 (portrait)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+/* STYLES GO HERE */
+}
