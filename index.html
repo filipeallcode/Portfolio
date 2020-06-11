@@ -1,39 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filipe Lins</title>
-    <link rel="stylesheet" type="text/css" href="/styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="container">
-        <div class="greeting">
-            <h1>Olá</h1> 
-            <h3>Me chamo Filipe Lins</h3>
-            <h3>Esse é o meu portfólio</h3>
-            <!--<button>Entrar</button>-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Filipe Lins</title>
+        <link rel="stylesheet" href="assets/styles/styles.css" type="text/css">
+        <link rel="stylesheet" href="assets/fonts/foundation-icons/foundation-icons.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="container">
+            <header class="row" id="about">
+                <div class="greeting">
+                    <h1>Olá</h1> 
+                    <p>Me chamo Filipe Lins</p>
+                    <p>Esse é o meu portfólio :)</p>
+                </div>
+
+                <div id="device">
+                    <h2>Veja meus últimos tweets</h2>
+                    <div class="twitter-content" id="style-1">
+                        <a class="twitter-timeline" data-theme="light" href="https://twitter.com/filipeallcode?ref_src=twsrc%5Etfw">Tweets by filipeallcode</a> 
+                    </div>
+                </div>
+            </header>
+            
+            <section id="experience">
+                <div id="exp-title">
+                    <h2>Minha Experiência</h2>
+                </div>
+                <div id="exp" class="row">
+                    <div class="exp-col">
+                        <i class="fi-laptop"></i>
+                        <h3>Front-End</h3>
+                        <ul>
+                            <li>HTML(5)</li>
+                            <li>CSS(3)</li>
+                            <li>Javascript</li>
+                            <li>Jquery</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                    <div class="exp-col">
+                        <i class="fi-database"></i>
+                        <h3>Back-End</h3>
+                        <ul>
+                            <li>NodeJS</li>
+                            <li>NPM</li>
+                            <li>SQL Server</li>
+                            <li>C#</li>
+                        </ul>
+                    </div>
+                    <div class="exp-col">
+                        <i class="fi-star"></i>
+                        <h3>Ferramentas</h3>
+                        <ul>
+                            <li>VS Code</li>
+                            <li>Visual Studio</li>
+                            <li>Jira</li>
+                            <li>Git</li>
+                            <li>SSMS</li>
+					    </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="column" id="work">
+                <h2 >Trabalhos</h2>
+                <p id="work-subtitle">Aqui estão alguns dos meus projetos.</p>
+                
+                <div id="work-sub" class="row">
+                    <div class="work-details">
+                        <h3>Store Locator</h3>
+                        <p class="platform">Web</p>
+                        <p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
+                        <p>
+                            Uma aplicação construida utilizando a API do <strong>Google Maps</strong> para simular um localizador de lojas com diferentes endereços utilizando inclusive busca por CEP (zip code) e com exibição do mapa de acordo com o mesmo. Também mostrando informações da loja como número de telefone, endereço e nome em um box informativo.
+                        </p>
+                        <button>
+                            <h3><a target="_blank" href="https://cpgooglemapsproject.imfast.io/">Visitar Website</a></h3>
+                        </button>
+                    </div>
+                    <div class="work-img">
+                        <img src="assets/images/projects/store_locator_01.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section class="column" id="contact">
+                <button>
+                    <h3><a target="_blank" href="https://github.com/filipeallins">github.com/filipeallins</a></h3>
+                </button>
+                <h3>contato@filipelins.com</h3>
+            </section>
+
+            <footer class="column" id="footer">
+                <div class="copyright">
+                    Filipe Lins | 2020
+                </div>
+                <div class="credit">
+                    Photo by 
+                    <a target="_blank" href="https://unsplash.com/@alesnesetril?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">
+                        Ales Nesetril
+                    </a> 
+                    on 
+                    <a target="_blank" href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">
+                        Unsplash
+                    </a>
+                </div>
+            </footer>
+       
         </div>
-        <div class="description">
-            <p>Em construção :)</p>
-            <p id="mail">contato@filipelins.com</p>
-        </div>
-    </div>
-    <footer class="row">
-        <div class="copyright">
-            Filipe Lins | 2020
-        </div>
-        <div class="credit">
-            Photo by 
-            <a href="https://unsplash.com/@alesnesetril?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">
-                Ales Nesetril
-            </a> 
-            on 
-            <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">
-                Unsplash
-            </a>
-        </div>
-    </footer>
-</body>
+        
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    
+    </body>
 </html>

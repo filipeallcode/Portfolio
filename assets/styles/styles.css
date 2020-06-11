@@ -1,0 +1,338 @@
+body {
+    background-image: url('/assets/images/ales-nesetril-Im7lZjxeLhg-unsplash-dark.jpg');
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#about {
+    margin-bottom: 1em;
+}
+
+.greeting {
+    flex: 2;
+    text-align: center;
+    margin: 1em;
+    filter: blur(0.02rem)
+}
+
+h1 {
+    font-size: 6em;
+    font-weight: lighter;
+}
+
+button {
+    background-color: transparent;
+    border-style: solid;
+    border-color: whitesmoke;
+    border-width: 0.2em;
+    border-radius: 2em;
+}
+
+button > h3 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.greeting p {
+    font-size: 3em;
+    font-weight: lighter;
+}
+
+#device {
+    flex: 1;
+    margin: 1em;
+}
+
+.twitter-content {
+    border-style: solid;
+    border-color: #101010;
+    border-width: 0.5em;
+    border-radius: 1em;
+    background-color: black;
+    width: 20em;
+    height: 30em;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+ #style-1::-webkit-scrollbar-track
+ {
+     -webkit-box-shadow: inset 0 0 0.2em rgba(0,0,0,0.3);
+     border-radius: 1em;
+     background-color: gray;
+ }
+ 
+ #style-1::-webkit-scrollbar
+ {
+     width: 0.5em;
+     background-color: black;
+ }
+ 
+ #style-1::-webkit-scrollbar-thumb
+ {
+     border-radius: 1em;
+     -webkit-box-shadow: inset 0 0 0.2em rgba(0,0,0,.3);
+     background-color: #555;
+ }
+
+#experience {
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 1em;
+    background-color: #101010;
+    opacity: 80%;
+}
+
+#experience i {
+    color: grey;
+    font-size: 5em;
+}
+
+#experience ul {
+    list-style: none;
+    padding-left: 0.5em;
+}
+
+.exp-col {
+    flex: 1;
+    flex-wrap: wrap;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+#work {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    align-items: center;
+}
+
+#work > p {
+    margin-bottom: 3em;
+}
+
+.work-details {
+    margin-left: 3em;
+    margin-right: 1.5em;
+    flex: 1;
+}
+
+.work-img {
+    margin-right: 3em;
+    margin-left: 1.5em;
+    flex: 1;
+}
+
+.work-details i {
+    color: whitesmoke;
+	margin-right: 1em;
+}
+
+.work-details a {
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+#contact {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    align-items: center;
+}
+
+#contact a {
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#footer {
+    margin-top: 1em;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0.9;
+    filter: blur(0.02rem)
+}
+
+.copyright {
+    font-size: medium;
+    padding-top: 5px;
+}
+
+.credit {
+    font-size: small;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.credit a {
+    color: whitesmoke;
+}
+ 
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (min-width : 320px)
+and (max-device-width : 1024px) {
+    body {
+        background-image: url('/assets/images/ales-nesetril-Im7lZjxeLhg-unsplash-dark-mobile.jpg');
+    }
+
+    .greeting {
+        filter: none;
+    }
+
+    .greeting h1 {
+        margin-top: 0.2em;
+    }
+
+    .greeting p {
+        font-size: 1.5em;
+        margin-bottom: 3em;
+    }
+    
+    .twitter-content {
+        width: 96%;
+    }
+
+    #device h2 {
+        margin-top: 1.2em;
+    }
+
+    #exp {
+        flex-direction: column;
+    }
+
+    #work-sub {
+        flex-direction: column-reverse;
+        align-content: center;
+    }
+
+    .work-img {
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+
+    .work-img img {
+        max-width: 100%;
+    }
+
+    .work-details {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .work-details button {
+        margin-bottom: 2em;
+    }
+
+    #footer {
+        filter: none;
+    }
+}
+ 
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 320px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+    #exp {
+        flex-direction: row;
+    }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+    
+}
+ 
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+
+}
+ 
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* STYLES GO HERE */
+}
+ 
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* STYLES GO HERE */
+}
+ 
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* STYLES GO HERE */
+}
+ 
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* STYLES GO HERE */
+}
+ 
+/* iPhone 5 (portrait &amp; landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+/* STYLES GO HERE */
+}
+ 
+/* iPhone 5 (landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+/* STYLES GO HERE */
+}
+ 
+/* iPhone 5 (portrait)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+/* STYLES GO HERE */
+}
