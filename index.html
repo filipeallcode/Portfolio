@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/bootstrap-4.5.0-dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
         <title>Filipe Lins</title>
         <link rel="icon" type="image/png" href="assets/images/favico.png">
         <link rel="stylesheet" href="assets/styles/styles.css" type="text/css">
@@ -12,27 +18,27 @@
     <body>
 
         <div class="container">
-            <header class="row" id="about">
-                <div class="greeting">
-                    <h1>Olá</h1> 
-                    <p>Me chamo Filipe Lins</p>
-                    <p>Esse é o meu portfólio :)</p>
+            <header class="row align-items-center mt-5 mb-5" id="about">
+                <div class="greeting col-sm-8 text-center">
+                    <h1 class="display-1">Olá</h1> 
+                    <h3>Me chamo Filipe Lins</h3>
+                    <h3>Esse é o meu portfólio :)</h3>
                 </div>
 
-                <div id="device">
-                    <h2>Veja meus últimos tweets</h2>
+                <div id="device col-sm-4">
+                    <h5>Veja meus últimos tweets</h5>
                     <div class="twitter-content" id="style-1">
                         <a class="twitter-timeline" data-theme="light" href="https://twitter.com/filipeallcode?ref_src=twsrc%5Etfw">Tweets by filipeallcode</a> 
                     </div>
                 </div>
             </header>
             
-            <section id="experience">
-                <div id="exp-title">
+            <section class="rounded" id="experience">
+                <div class="row justify-content-center align-items-center mt-20" id="exp-title">
                     <h2>Minha Experiência</h2>
                 </div>
-                <div id="exp" class="row">
-                    <div class="exp-col">
+                <div id="exp" class="row justify-content-around">
+                    <div class="col col-sm-2 text-center">
                         <i class="fi-laptop"></i>
                         <h3>Front-End</h3>
                         <ul>
@@ -43,7 +49,7 @@
                             <li>Bootstrap</li>
                         </ul>
                     </div>
-                    <div class="exp-col">
+                    <div class="col col-sm-2 text-center">
                         <i class="fi-database"></i>
                         <h3>Back-End</h3>
                         <ul>
@@ -53,7 +59,7 @@
                             <li>C#</li>
                         </ul>
                     </div>
-                    <div class="exp-col">
+                    <div class="col col-sm-2 text-center">
                         <i class="fi-star"></i>
                         <h3>Ferramentas</h3>
                         <ul>
@@ -67,12 +73,16 @@
                 </div>
             </section>
 
-            <section class="column" id="work">
-                <h2 >Trabalhos</h2>
-                <p id="work-subtitle">Aqui estão alguns dos meus projetos.</p>
+            <section id="work">
+                <div class="row justify-content-center mt-5 mb-5">
+                    <div class="col text-center">
+                        <h2>Trabalhos</h2>
+                        <p>Aqui estão alguns dos meus projetos.</p>
+                    </div>
+                </div>
                 
-                <div id="work-sub" class="row">
-                    <div class="work-details">
+                <div class="row justify-content-center">
+                    <div class="col-sm-6">
                         <h3>Store Locator</h3>
                         <p class="platform">Web</p>
                         <p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
@@ -80,28 +90,28 @@
                             Uma aplicação construida utilizando a API do <strong>Google Maps</strong> para simular um localizador de lojas com diferentes endereços utilizando inclusive busca por CEP (zip code) e com exibição do mapa de acordo com o mesmo. Também mostrando informações da loja como número de telefone, endereço e nome em um box informativo.
                         </p>
                         <button>
-                            <h3><a target="_blank" href="https://cpgooglemapsproject.imfast.io/">Visitar Website</a></h3>
+                            <h5><a target="_blank" href="https://cpgooglemapsproject.imfast.io/">Visitar Website</a></h5>
                         </button>
                     </div>
-                    <div class="work-img">
-                        <img src="assets/images/projects/store_locator_01.png" alt="">
+                    <div class="col-sm-6">
+                        <img class="rounded img-fluid" src="assets/images/projects/store_locator_01.png" alt="">
                     </div>
                 </div>
             </section>
 
-            <section class="column" id="contact">
+            <section class="col mt-5 mb-5 text-center" id="contact">
                 <button>
-                    <h3><a target="_blank" href="https://github.com/filipeallins">github.com/filipeallins</a></h3>
+                    <h5><a target="_blank" href="https://github.com/filipeallins">github.com/filipeallins</a></h5>
                 </button>
-                <h3>contato@filipelins.com</h3>
+                <h5 class="mt-5">contato@filipelins.com</h5>
             </section>
 
-            <footer class="column" id="footer">
+            <footer class="col text-center" id="footer">
                 <div class="copyright">
                     Filipe Lins | 2020
                 </div>
                 <div class="credit">
-                    Photo by 
+                    Photo by
                     <a target="_blank" href="https://unsplash.com/@alesnesetril?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">
                         Ales Nesetril
                     </a> 
